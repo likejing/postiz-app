@@ -1,0 +1,52 @@
+# Postiz 自动部署工作流
+# 推送到 main 分支时自动部署到阿里云 ECS
+
+name: Deploy to Aliyun ECS
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:  # 支持手动触发
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to server via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.ECS_HOST }}
+          username: ${{ secrets.ECS_USERNAME }}
+          password: ${{ secrets.ECS_PASSWORD }}
+          port: ${{ secrets.ECS_PORT }}
+          script: |
+            cd /www/wwwroot/postiz
+            
+            # 拉取最新代码
+            git pull origin main
+            
+            # 使用缓存构建并重启
+            docker compose -f docker-compose.prod.yaml up -d --build
+            
+            # 等待服务启动
+            sleep 30
+            
+            # 显示状态
+            docker compose -f docker-compose.prod.yaml ps
+            
+            echo "✅ 部署完成!"
+
+      - name: Health Check
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.ECS_HOST }}
+          username: ${{ secrets.ECS_USERNAME }}
+          password: ${{ secrets.ECS_PASSWORD }}
+          port: ${{ secrets.ECS_PORT }}
+          script: |
+            sleep 15
+            curl -sf http://localhost:4200 || echo "⚠️ 健康检查失败，请检查日志"
+            curl -sf http://localhost:3000/health || echo "⚠️ 后端健康检查失败"
