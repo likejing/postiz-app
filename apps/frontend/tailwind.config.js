@@ -17,6 +17,16 @@ module.exports = {
         input: 'var(--color-input)',
         inputText: 'var(--color-input-text)',
         tableBorder: 'var(--color-table-border)',
+
+        // 中文主题色彩扩展
+        cnRed: '#d4380d',
+        cnRedLight: '#ff7875',
+        cnBlue: '#1890ff',
+        cnBlueLight: '#40a9ff',
+        cnJade: '#52c41a',
+        cnJadeLight: '#73d13d',
+        cnGold: '#faad14',
+        cnOrange: '#fa541c',
         customColor1: 'var(--color-custom1)',
         customColor2: 'var(--color-custom2)',
         customColor3: 'var(--color-custom3)',
@@ -122,7 +132,9 @@ module.exports = {
         loginBg: 'url(/auth/bg-login.png)',
       },
       fontFamily: {
-        sans: ['Helvetica Neue'],
+        sans: ['Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', 'sans-serif'],
+        'sans-cn': ['PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', 'sans-serif'],
+        'serif-cn': ['Songti SC', 'SimSun', 'STSong', 'serif'],
       },
       animation: {
         fade: 'fadeOut 0.5s ease-in-out',
@@ -270,6 +282,40 @@ module.exports = {
         xs: {
           max: '401px',
         },
+        // 中文界面优化断点
+        'cn-sm': '640px',
+        'cn-md': '768px',
+        'cn-lg': '1024px',
+        'cn-xl': '1280px',
+        'cn-2xl': '1536px',
+      },
+      // 中文排版优化
+      letterSpacing: {
+        'cn-tight': '0.01em',
+        'cn-normal': '0.02em',
+        'cn-wide': '0.03em',
+        'cn-wider': '0.05em',
+      },
+      lineHeight: {
+        'cn-tight': '1.4',
+        'cn-normal': '1.6',
+        'cn-relaxed': '1.8',
+        'cn-loose': '2.0',
+      },
+      spacing: {
+        'cn-xs': '6px',
+        'cn-sm': '10px',
+        'cn-md': '16px',
+        'cn-lg': '24px',
+        'cn-xl': '32px',
+        'cn-2xl': '48px',
+      },
+      borderRadius: {
+        'cn-sm': '6px',
+        'cn-md': '10px',
+        'cn-lg': '16px',
+        'cn-xl': '20px',
+        'cn-2xl': '28px',
       },
     },
   },

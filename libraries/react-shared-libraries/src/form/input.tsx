@@ -50,9 +50,9 @@ export const Input: FC<
     }
   }, [watch]);
   return (
-    <div className="flex flex-col gap-[6px]">
+    <div className="flex flex-col gap-cn-sm font-sans-cn">
       {!!label && (
-        <div className={`text-[14px]`}>
+        <div className={`text-[14px] tracking-cn-normal`}>
           <TranslatedLabel
             label={label}
             translationKey={translationKey}
@@ -62,14 +62,14 @@ export const Input: FC<
       )}
       <div
         className={clsx(
-          'bg-newBgColorInner h-[42px] border-newTableBorder border rounded-[8px] text-textColor placeholder-textColor flex items-center justify-center',
+          'bg-newBgColorInner h-[42px] border-newTableBorder border rounded-cn-md text-textColor placeholder-textColor flex items-center justify-center',
           className
         )}
       >
         {icon && <div className="ps-[16px]">{icon}</div>}
         <input
           className={clsx(
-            'h-full bg-transparent outline-none flex-1 text-[14px] text-textColor',
+            'h-full bg-transparent outline-none flex-1 text-[14px] text-textColor tracking-cn-normal',
             icon ? 'pl-[8px] pe-[16px]' : 'px-[16px]'
           )}
           {...(disableForm ? {} : form.register(props.name))}
@@ -77,7 +77,7 @@ export const Input: FC<
         />
       </div>
       {!removeError && (
-        <div className="text-red-400 text-[12px]">{err || <>&nbsp;</>}</div>
+        <div className="text-red-400 text-[12px] tracking-cn-normal">{err || <>&nbsp;</>}</div>
       )}
     </div>
   );

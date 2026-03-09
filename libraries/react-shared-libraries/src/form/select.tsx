@@ -45,8 +45,8 @@ export const Select: FC<
     return form?.formState?.errors?.[props?.name!]?.message! as string;
   }, [form?.formState?.errors?.[props?.name!]?.message, error]);
   return (
-    <div className={clsx('flex flex-col', label ? 'gap-[6px]' : '')}>
-      <div className={`text-[14px]`}>
+    <div className={clsx('flex flex-col font-sans-cn', label ? 'gap-cn-sm' : '')}>
+      <div className={`text-[14px] tracking-cn-normal`}>
         <TranslatedLabel
           label={label}
           translationKey={translationKey}
@@ -57,13 +57,13 @@ export const Select: FC<
         ref={ref}
         {...(disableForm ? {} : form.register(props.name, extraForm))}
         className={clsx(
-          'h-[42px] bg-newBgColorInner px-[16px] outline-none border-newTableBorder border rounded-[8px] text-[14px]',
+          'h-[42px] bg-newBgColorInner px-[16px] outline-none border-newTableBorder border rounded-cn-md text-[14px] tracking-cn-normal',
           className
         )}
         {...rest}
       />
       {!hideErrors && (
-        <div className="text-red-400 text-[12px]">{err || <>&nbsp;</>}</div>
+        <div className="text-red-400 text-[12px] tracking-cn-normal">{err || <>&nbsp;</>}</div>
       )}
     </div>
   );

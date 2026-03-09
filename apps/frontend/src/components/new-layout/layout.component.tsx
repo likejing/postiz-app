@@ -40,6 +40,7 @@ import { StreakComponent } from '@gitroom/frontend/components/layout/streak.comp
 import { PreConditionComponent } from '@gitroom/frontend/components/layout/pre-condition.component';
 import { AttachToFeedbackIcon } from '@gitroom/frontend/components/new-layout/sentry.feedback.component';
 import { FirstBillingComponent } from '@gitroom/frontend/components/billing/first.billing.component';
+import { CNThemeSwitcher } from '@gitroom/frontend/components/ui/cn-theme-switcher';
 
 const jakartaSans = Plus_Jakarta_Sans({
   weight: ['600', '500', '700'],
@@ -87,7 +88,7 @@ export const LayoutComponent = ({ children }: { children: ReactNode }) => {
             <ContinueProvider />
             <div
               className={clsx(
-                'flex flex-col min-h-screen min-w-screen text-newTextColor p-[12px]',
+                'flex flex-col min-h-screen min-w-screen text-newTextColor p-[12px] font-sans-cn',
                 jakartaSans.className
               )}
             >
@@ -119,6 +120,9 @@ export const LayoutComponent = ({ children }: { children: ReactNode }) => {
                         <StreakComponent />
                         <div className="w-[1px] h-[20px] bg-blockSeparator" />
                         <OrganizationSelector />
+                        <div className="hover:text-newTextColor">
+                          <CNThemeSwitcher />
+                        </div>
                         <div className="hover:text-newTextColor">
                           <ModeComponent />
                         </div>

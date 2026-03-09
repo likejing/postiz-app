@@ -36,11 +36,11 @@ export const Textarea: FC<
   return (
     <div
       className={clsx(
-        'flex flex-col gap-[6px]',
+        'flex flex-col gap-cn-sm font-sans-cn',
         props.disabled && 'opacity-50'
       )}
     >
-      <div className={`text-[14px]`}>
+      <div className={`text-[14px] tracking-cn-normal`}>
         <TranslatedLabel
           label={label}
           translationKey={translationKey}
@@ -50,12 +50,12 @@ export const Textarea: FC<
       <textarea
         {...(disableForm ? {} : form.register(props.name))}
         className={clsx(
-          'bg-input min-h-[150px] p-[16px] outline-none border-fifth border rounded-[4px] text-inputText placeholder-inputText',
+          'bg-input min-h-[150px] p-[16px] outline-none border-fifth border rounded-cn-md text-inputText placeholder-inputText tracking-cn-normal leading-cn-relaxed',
           className
         )}
         {...rest}
       />
-      <div className="text-red-400 text-[12px]">{err || <>&nbsp;</>}</div>
+      <div className="text-red-400 text-[12px] tracking-cn-normal">{err || <>&nbsp;</>}</div>
     </div>
   );
 };

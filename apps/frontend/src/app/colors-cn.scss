@@ -1,0 +1,273 @@
+// 中文用户优化配色方案
+// Chinese User Optimized Color Scheme
+// 基于中国用户审美偏好和使用习惯设计
+
+:root {
+  // 中国红主题 (China Red Theme)
+  .cn-red {
+    --new-back-drop: #1a0000;
+    --new-settings: #2a1616;
+    --new-border: #3d2020;
+    --new-bgColor: #1a0f0f;
+    --new-bgColorInner: #2d1a1a;
+    --new-sep: #4a2828;
+    --new-bgLineColor: #3a1f1f;
+    --new-textItemFocused: #ff4d4f;
+    --new-textItemBlur: #999999;
+    --new-boxFocused: #fff;
+    --new-textColor: 255 255 255;
+    --new-blockSeparator: #3a2020;
+    --new-btn-simple: #3d2626;
+    --new-btn-text: #ffffff;
+    --new-btn-primary: #d4380d; // 中国红主色
+    --new-ai-btn: #ff7875; // 柔和红色
+    --new-box-hover: #2d1f1f;
+    --new-table-border: #3d2828;
+    --new-table-header: #2a1a1a;
+    --new-table-text: #a8a8a8;
+    --new-table-text-focused: #ff7875;
+    --new-small-strips: #251818;
+    --new-big-strips: #221515;
+    --new-col-color: #3a2525;
+    --new-menu-dots: #7a6868;
+    --new-menu-hover: #fff;
+    --menu-shadow: 0 8px 30px 0 rgba(212, 56, 13, 0.3);
+    --popup-color: rgba(212, 56, 13, 0.2);
+    --border-preview: transparent;
+    --preview-box-shadow: 0 4px 20px rgba(212, 56, 13, 0.15);
+  }
+
+  // 青花瓷主题 (Blue and White Porcelain Theme)
+  .cn-blue {
+    --new-back-drop: #0a1628;
+    --new-settings: #1a2a3d;
+    --new-border: #2a3d52;
+    --new-bgColor: #0f1a2e;
+    --new-bgColorInner: #1a2a42;
+    --new-sep: #2d4263;
+    --new-bgLineColor: #1f3147;
+    --new-textItemFocused: #1890ff;
+    --new-textItemBlur: #8c9cb5;
+    --new-boxFocused: #e6f7ff;
+    --new-textColor: 255 255 255;
+    --new-blockSeparator: #1f2f42;
+    --new-btn-simple: #2a3d52;
+    --new-btn-text: #ffffff;
+    --new-btn-primary: #1890ff; // 青花蓝
+    --new-ai-btn: #52c41a; // 翠绿色
+    --new-box-hover: #1f2f42;
+    --new-table-border: #2a3d52;
+    --new-table-header: #1a2a3d;
+    --new-table-text: #8c9cb5;
+    --new-table-text-focused: #40a9ff;
+    --new-small-strips: #151f2e;
+    --new-big-strips: #121a28;
+    --new-col-color: #2a3d52;
+    --new-menu-dots: #6a7a8f;
+    --new-menu-hover: #fff;
+    --menu-shadow: 0 8px 30px 0 rgba(24, 144, 255, 0.25);
+    --popup-color: rgba(24, 144, 255, 0.15);
+    --border-preview: transparent;
+    --preview-box-shadow: 0 4px 20px rgba(24, 144, 255, 0.12);
+  }
+
+  // 翡翠绿主题 (Jade Green Theme)
+  .cn-jade {
+    --new-back-drop: #0a1a14;
+    --new-settings: #1a2d24;
+    --new-border: #2a4235;
+    --new-bgColor: #0f1f18;
+    --new-bgColorInner: #1a2f26;
+    --new-sep: #2d4a3d;
+    --new-bgLineColor: #1f3a2e;
+    --new-textItemFocused: #52c41a;
+    --new-textItemBlur: #8ca89c;
+    --new-boxFocused: #f6ffed;
+    --new-textColor: 255 255 255;
+    --new-blockSeparator: #1f3528;
+    --new-btn-simple: #2a4235;
+    --new-btn-text: #ffffff;
+    --new-btn-primary: #52c41a; // 翡翠绿
+    --new-ai-btn: #13c2c2; // 青色
+    --new-box-hover: #1f3528;
+    --new-table-border: #2a4235;
+    --new-table-header: #1a2d24;
+    --new-table-text: #8ca89c;
+    --new-table-text-focused: #73d13d;
+    --new-small-strips: #151f1a;
+    --new-big-strips: #121a16;
+    --new-col-color: #2a4235;
+    --new-menu-dots: #6a8a7a;
+    --new-menu-hover: #fff;
+    --menu-shadow: 0 8px 30px 0 rgba(82, 196, 26, 0.25);
+    --popup-color: rgba(82, 196, 26, 0.15);
+    --border-preview: transparent;
+    --preview-box-shadow: 0 4px 20px rgba(82, 196, 26, 0.12);
+  }
+
+  // 明亮中国风 (Bright Chinese Style - Light Mode)
+  .cn-light {
+    --new-back-drop: #fff5f0;
+    --new-settings: #fff7f0;
+    --new-sep: #ffe7d9;
+    --new-border: #ffd8bf;
+    --new-bgColor: #fff9f5;
+    --new-bgColorInner: #ffffff;
+    --new-bgLineColor: #fff0e6;
+    --new-textItemFocused: #d4380d;
+    --new-textItemBlur: #8c8c8c;
+    --new-boxFocused: #fff2e8;
+    --new-textColor: 26 26 26;
+    --new-blockSeparator: #fff7f0;
+    --new-btn-simple: #fff0e6;
+    --new-btn-text: #1a1a1a;
+    --new-btn-primary: #d4380d; // 中国红
+    --new-ai-btn: #fa541c; // 橙红色
+    --new-box-hover: #fff7f0;
+    --new-table-border: #ffe7d9;
+    --new-table-header: #fff7f0;
+    --new-table-text: #8c8c8c;
+    --new-table-text-focused: #ff7875;
+    --new-small-strips: #fff5f0;
+    --new-big-strips: #fff7f0;
+    --new-col-color: #fff0e6;
+    --new-menu-dots: #8c8c8c;
+    --new-menu-hover: #1a1a1a;
+    --menu-shadow: 0 4px 20px 0 rgba(212, 56, 13, 0.08),
+                   0 2px 8px 0 rgba(212, 56, 13, 0.06);
+    --popup-color: rgba(212, 56, 13, 0.08);
+    --border-preview: #ffe7d9;
+    --preview-box-shadow: 0 4px 16px rgba(212, 56, 13, 0.06);
+  }
+
+  // 清新蓝白 (Fresh Blue and White - Light Mode)
+  .cn-light-blue {
+    --new-back-drop: #f0f5ff;
+    --new-settings: #f5f8ff;
+    --new-sep: #d6e4ff;
+    --new-border: #adc6ff;
+    --new-bgColor: #f5f8ff;
+    --new-bgColorInner: #ffffff;
+    --new-bgLineColor: #e6f0ff;
+    --new-textItemFocused: #1890ff;
+    --new-textItemBlur: #8c8c8c;
+    --new-boxFocused: #e6f7ff;
+    --new-textColor: 26 26 26;
+    --new-blockSeparator: #f5f8ff;
+    --new-btn-simple: #e6f0ff;
+    --new-btn-text: #1a1a1a;
+    --new-btn-primary: #1890ff; // 青花蓝
+    --new-ai-btn: #52c41a; // 翠绿色
+    --new-box-hover: #f5f8ff;
+    --new-table-border: #d6e4ff;
+    --new-table-header: #f5f8ff;
+    --new-table-text: #8c8c8c;
+    --new-table-text-focused: #40a9ff;
+    --new-small-strips: #f0f5ff;
+    --new-big-strips: #f5f8ff;
+    --new-col-color: #e6f0ff;
+    --new-menu-dots: #8c8c8c;
+    --new-menu-hover: #1a1a1a;
+    --menu-shadow: 0 4px 20px 0 rgba(24, 144, 255, 0.08),
+                   0 2px 8px 0 rgba(24, 144, 255, 0.06);
+    --popup-color: rgba(24, 144, 255, 0.08);
+    --border-preview: #d6e4ff;
+    --preview-box-shadow: 0 4px 16px rgba(24, 144, 255, 0.06);
+  }
+}
+
+// 保留原有的 dark 和 light 主题兼容性
+:root {
+  .dark {
+    // 默认使用青花瓷主题
+    @extend .cn-blue;
+  }
+
+  .light {
+    // 默认使用清新蓝白主题
+    @extend .cn-light-blue;
+  }
+}
+
+// 中文字体优化
+:root {
+  --font-family-cn: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+  --font-family-cn-serif: 'Songti SC', 'SimSun', 'STSong', serif;
+  --font-family-cn-mono: 'SF Mono', 'Menlo', 'Monaco', 'Courier New', monospace;
+}
+
+// 中文排版优化
+.cn-typography {
+  font-family: var(--font-family-cn);
+  letter-spacing: 0.02em; // 中文字间距
+  line-height: 1.6; // 更大的行高适合中文阅读
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600; // 中文标题使用中等粗细
+    letter-spacing: 0.03em;
+  }
+
+  p {
+    text-align: justify; // 中文段落两端对齐
+    text-justify: inter-ideograph;
+  }
+}
+
+// 按钮尺寸优化（适配中文文本）
+.cn-button {
+  min-width: 88px; // 中文按钮最小宽度
+  padding: 8px 20px; // 更宽的内边距
+  font-size: 14px;
+  line-height: 1.5;
+
+  &.large {
+    min-width: 120px;
+    padding: 12px 28px;
+    font-size: 16px;
+  }
+
+  &.small {
+    min-width: 64px;
+    padding: 4px 12px;
+    font-size: 12px;
+  }
+}
+
+// 表单输入优化
+.cn-input {
+  height: 40px; // 稍高的输入框
+  padding: 8px 16px;
+  font-size: 14px;
+  line-height: 1.5;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.35); // 更淡的占位符
+  }
+}
+
+// 间距优化（中文需要更多空间）
+.cn-spacing {
+  --spacing-xs: 6px;
+  --spacing-sm: 10px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+}
+
+// 圆角优化（中国用户偏好更圆润的设计）
+.cn-rounded {
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 28px;
+}
+
+// 阴影优化（更柔和的阴影）
+.cn-shadow {
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.10);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 12px 32px rgba(0, 0, 0, 0.15);
+}

@@ -62,14 +62,14 @@ export function Login() {
   };
   return (
     <FormProvider {...form}>
-      <form className="flex-1 flex" onSubmit={form.handleSubmit(onSubmit)}>
+      <form className="flex-1 flex font-sans-cn" onSubmit={form.handleSubmit(onSubmit)}>
         <div className="flex flex-col flex-1">
           <div>
-            <h1 className="text-[40px] font-[500] -tracking-[0.8px] text-start cursor-pointer">
+            <h1 className="text-[40px] font-[500] -tracking-[0.8px] tracking-cn-normal text-start cursor-pointer">
               {t('sign_in', 'Sign In')}
             </h1>
           </div>
-          <div className="text-[14px] mt-[32px] mb-[12px]">
+          <div className="text-[14px] mt-[32px] mb-[12px] tracking-cn-normal">
             {t('continue_with', 'Continue With')}
           </div>
           <div className="flex flex-col">
