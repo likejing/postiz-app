@@ -5,7 +5,7 @@
 set -e
 
 # 默认部署目录
-DEPLOY_DIR="${DEPLOY_DIR:-/www/wwwroot/postiz}"
+DEPLOY_DIR="${DEPLOY_DIR:-/www/wwwroot/postiz-app}"
 
 cd "$DEPLOY_DIR"
 

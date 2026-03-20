@@ -49,8 +49,8 @@
 
 ```bash
 # 克隆仓库
-git clone git@github.com:likejing/postiz-app.git /www/wwwroot/postiz
-cd /www/wwwroot/postiz
+git clone git@github.com:likejing/postiz-app.git /www/wwwroot/postiz-app
+cd /www/wwwroot/postiz-app
 
 # 如果需要同步上游更新
 git remote add upstream https://github.com/gitroomhq/postiz-app.git
@@ -300,16 +300,16 @@ certbot renew --dry-run
 
 ```bash
 # 给脚本执行权限
-chmod +x /www/wwwroot/postiz/scripts/deploy.sh
+chmod +x /www/wwwroot/postiz-app/scripts/deploy.sh
 
 # 执行部署
-/www/wwwroot/postiz/scripts/deploy.sh
+/www/wwwroot/postiz-app/scripts/deploy.sh
 ```
 
 或者手动执行以下命令:
 
 ```bash
-cd /www/wwwroot/postiz
+cd /www/wwwroot/postiz-app
 
 # 拉取代码
 git pull origin main

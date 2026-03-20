@@ -23,7 +23,7 @@ jobs:
           password: ${{ secrets.ECS_PASSWORD }}
           port: ${{ secrets.ECS_PORT }}
           script: |
-            cd /www/wwwroot/postiz
+            cd /www/wwwroot/postiz-app
             
             # 拉取最新代码
             git pull origin main
