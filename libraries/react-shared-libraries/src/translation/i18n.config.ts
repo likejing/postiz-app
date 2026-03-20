@@ -1,6 +1,7 @@
-export const fallbackLng = 'en';
+// Default app language (when no cookie/header language is provided).
+export const fallbackLng = 'zh';
 export const languages = [
-  fallbackLng,
+  'en',
   'he',
   'ru',
   'zh',
